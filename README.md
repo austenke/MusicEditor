@@ -18,13 +18,13 @@ To add a note, left click anywhere on the grid. A light grey square will pop up,
 To remove a note, right click on any note on the grid. You will delete that note and it’s duration if it has one. This will update the model, and the gui and midi will update as well to reflect this change.
 
 Interfaces:
- - IMusicModel
+ - IMusicModel:
 	This interface is implemented for all music models, and contains methods for adding notes to songs, and combining them
 
- - ViewInterface
+ - ViewInterface:
 	This interface is implemented by all views and contains the run method, making the view render the model in whatever way it is supposed to.
 
- - GuiViewInterface
+ - GuiViewInterface:
 	Subclass of ViewInterface, used to contain methods only needed by a gui view.
 
 Classes:
@@ -36,25 +36,25 @@ Classes:
 	Implements IMusicModel, contains a toString method that allows it to be printed in the console as shown in the assignment
  - Pitch
 	Contains an integer for pitch level, an integer for octave, and a list of integers for the notes that are being played each beat
- - Note
+ - Note:
 	A note keeps track of whether or not it is playing, it’s volume, and it’s instrument. It is kept in a list by pitch
- - ViewBuilder
+ - ViewBuilder:
 	A class designed to take an argument and a model, and return the corresponding view of the model
- - Console
+ - Console:
 	A view that renders the model as text in the console
- - Midi
+ - Midi:
 	A view that renders the model as audio from the MIDI
- - GUI
+ - GUI:
 	A view that renders the model as a GUI using swing
- - CompositeView
+ - CompositeView:
 	A view that renders the model as both a GUI and midi
- - ConcreteGuiViewPanel
+ - ConcreteGuiViewPanel:
 	A helper class that renders a jpanel of the model
- - CompositionBuilder
+ - CompositionBuilder:
 	A class used by MusicReader to build a model from a text file
- - MusicReader
+ - MusicReader:
 	A class used to read text files and use CompositionBuilder to make a model from it
- - KeyboardHandler
+ - KeyboardHandler:
 	A class that implements keyListener, has the ability to be modified so that it can be given a keycode and a runnable and execute the runnable when it detects the 	given keycode
- - MouseHandler
+ - MouseHandler:
 	A class that implements mouseListener, has the ability to be modified so that it can be given a mouse button and a runnable and execute the runnable when it detects the given mouse button
