@@ -5,6 +5,7 @@ To run the jar:
 java -cp hw05.jar cs3500.music.MusicEditor "filename" "view type"
 
 example: java -cp hw05.jar cs3500.music.MusicEditor “mary-little-lamb.txt" "midi"
+
 example: java -cp hw05.jar cs3500.music.MusicEditor "zoot-lw.txt" "composite"
 
 ——————————————————————————
