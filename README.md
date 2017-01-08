@@ -28,13 +28,13 @@ Interfaces:
 	Subclass of ViewInterface, used to contain methods only needed by a gui view.
 
 Classes:
- - MusicController
+ - MusicController:
 	Contains the view and the model, handles all model changes and initializes the mouse and key listeners to be used on the gui interfaces
- - ReadOnlyMusicModel
+ - ReadOnlyMusicModel:
 	A MusicModel that suppresses all mutator methods
- - MusicModel
+ - MusicModel:
 	Implements IMusicModel, contains a toString method that allows it to be printed in the console as shown in the assignment
- - Pitch
+ - Pitch:
 	Contains an integer for pitch level, an integer for octave, and a list of integers for the notes that are being played each beat
  - Note:
 	A note keeps track of whether or not it is playing, it’s volume, and it’s instrument. It is kept in a list by pitch
